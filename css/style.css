@@ -1,1 +1,48 @@
 
+/* Quy tắc cho thẻ body */
+body {
+    font-family: Arial, 'Gill Sans', 'Gill Sans MT', sans-serif; /* Đảm bảo sử dụng font đơn giản */
+    font-size: 16px; /* Sử dụng đơn vị px thay vì % để dễ kiểm soát */
+}
+
+/* Quy tắc cho thẻ header */
+header {
+   
+    background-color: #f5f3f3; /* Màu nền xám nhẹ */
+}
+
+/* Quy tắc cho thẻ nav */
+nav {
+   
+    background-color: #9ae99e; /* Màu nền xanh nhạt */
+}
+
+
+li {
+    display: inline-block;
+    width: 30%; 
+    text-align: center;
+    color:black
+}
+
+/* Quy tắc cho thẻ h1 */
+h1 {
+    text-align: center; 
+    font-family: Verdana, sans-serif; 
+    color: #ec0c0c; 
+}
+
+/* Quy tắc cho thẻ main */
+main {
+    background-color: #7bc591; 
+    font-size: 18px; 
+
+/* Quy tắc cho thẻ footer */
+footer {
+    background-color: #000000;
+}
+
+/* Quy tắc cho thẻ p */
+p {
+    line-height: 2.5; /* Tạo khoảng cách giữa các dòng hợp lý */
+}
