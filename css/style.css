@@ -1,76 +1,127 @@
-/* Quy tắc cho thẻ body */
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, 'Gill Sans', 'Gill Sans MT', sans-serif; /* Đảm bảo sử dụng font đơn giản */
-    font-size: 16px; /* Sử dụng đơn vị px thay vì % để dễ kiểm soát */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
 }
 
-/* Quy tắc cho thẻ header */
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
 header {
-    background-color: #f5f3f3; /* Màu nền xám nhẹ */
+  background-color: #4caf50; /* Xanh lá cây */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
-/* Quy tắc cho thẻ nav */
+header h1 {
+  margin: 10px 0;
+}
+
+header img {
+  width: 150px; /* Giảm kích thước hình ảnh */
+  border-radius: 10px; /* Bo góc cho hình ảnh */
+}
+
+/* Navigation */
 nav {
-    background-color: #9ae99e; /* Màu nền xanh nhạt */
-    display: inline-block; /* Đổi display thành inline-block */
-    width: 80%; /* Đặt chiều rộng khoảng 80% */
+  margin: 10px 0;
 }
 
-/* Bình luận quy tắc cho thẻ li */
-li {
-    /* display: inline-block; */ /* Bình luận theo yêu cầu */
-    /* width: 30%; */ /* Bình luận theo yêu cầu */
-    /* text-align: center; */ /* Bình luận theo yêu cầu */
-    /* color: black; */ /* Bình luận theo yêu cầu */
+nav ul {
+  display: flex; /* Sử dụng Flexbox cho menu */
+  list-style: none;
+  padding: 0;
+  justify-content: center; /* Căn giữa menu */
 }
 
-/* Quy tắc cho thẻ h1 */
-h1 {
-    text-align: center; 
-    font-family: Verdana, sans-serif; 
-    color: #ec0c0c; 
+nav ul li {
+  margin: 0 15px;
 }
 
-/* Quy tắc cho thẻ main */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b; /* Màu vàng khi hover */
+}
+
+/* Main */
 main {
-    background-color: #7bc591; 
-    font-size: 18px; 
+  background-color: white; /* Màu nền trắng */
+  padding: 20px;
+  border-radius: 10px; /* Bo góc cho main */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho main */
+  margin: 20px 0;
+  display: grid; /* Sử dụng Grid cho layout */
+  grid-template-columns: 1fr; /* 1 cột cho desktop */
 }
 
-/* Quy tắc cho thẻ footer */
+@media (min-width: 600px) {
+  main {
+    grid-template-columns: 1fr 1fr; /* 2 cột cho màn hình lớn hơn */
+    gap: 20px; /* Khoảng cách giữa các cột */
+  }
+}
+
+main p {
+  margin-bottom: 15px;
+}
+
+main a {
+  color: #4caf50; /* Màu xanh lá cho liên kết */
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline; /* Gạch chân khi hover */
+}
+
+/* Footer */
 footer {
-    background-color: #000000; 
+  background-color: #333; /* Màu nền footer */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
 }
 
-/* Quy tắc cho thẻ p */
-p {
-    line-height: 2.5; /* Tạo khoảng cách giữa các dòng hợp lý */
+footer a {
+  color: #ffeb3b; /* Màu vàng cho liên kết trong footer */
+  text-decoration: none;
 }
 
-/* Selector con cho hình ảnh trong nav */
-nav img {
-    width: 10%; /* Đặt chiều rộng hình ảnh trong nav */
+footer a:hover {
+  text-decoration: underline; /* Gạch chân khi hover */
 }
 
-/* Quy tắc cho lớp grid */
-.grid {
-    display: grid; /* Đặt display thành grid */
-    grid-template-columns: repeat(2, 40%); /* Đặt thành 2 cột với chiều rộng khoảng 40% */
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -40px; /* Ẩn liên kết */
+  left: 10px;
+  background: #4caf50;
+  color: white;
+  padding: 10px;
+  transition: top 0.3s;
 }
 
-/* Selector con cho hình ảnh trong lớp grid */
-.grid img {
-    width: 100%; /* Đặt chiều rộng hình ảnh trong grid thành 100% */
-}
-
-/* Quy tắc cho lớp flex */
-.flex {
-    display: flex; /* Đặt display thành flex */
-    flex-wrap: wrap; /* Cho phép cuộn lại */
-    justify-content: center; /* Căn giữa các phần tử */
-}
-
-/* Cài đặt cho thẻ a (hyperlink) để không có đường gạch dưới */
-a {
-    text-decoration: none; /* Xóa bỏ đường gạch dưới cho hyperlink */
+.skip-link:focus {
+  top: 10px; /* Hiện liên kết khi focus */
 }
