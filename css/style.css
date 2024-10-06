@@ -1,4 +1,3 @@
-
 /* Quy tắc cho thẻ body */
 body {
     font-family: Arial, 'Gill Sans', 'Gill Sans MT', sans-serif; /* Đảm bảo sử dụng font đơn giản */
@@ -7,22 +6,22 @@ body {
 
 /* Quy tắc cho thẻ header */
 header {
-   
     background-color: #f5f3f3; /* Màu nền xám nhẹ */
 }
 
 /* Quy tắc cho thẻ nav */
 nav {
-   
     background-color: #9ae99e; /* Màu nền xanh nhạt */
+    display: inline-block; /* Đổi display thành inline-block */
+    width: 80%; /* Đặt chiều rộng khoảng 80% */
 }
 
-
+/* Bình luận quy tắc cho thẻ li */
 li {
-    display: inline-block;
-    width: 30%; 
-    text-align: center;
-    color:black
+    /* display: inline-block; */ /* Bình luận theo yêu cầu */
+    /* width: 30%; */ /* Bình luận theo yêu cầu */
+    /* text-align: center; */ /* Bình luận theo yêu cầu */
+    /* color: black; */ /* Bình luận theo yêu cầu */
 }
 
 /* Quy tắc cho thẻ h1 */
@@ -36,13 +35,42 @@ h1 {
 main {
     background-color: #7bc591; 
     font-size: 18px; 
+}
 
 /* Quy tắc cho thẻ footer */
 footer {
-    background-color: #000000;
+    background-color: #000000; 
 }
 
 /* Quy tắc cho thẻ p */
 p {
     line-height: 2.5; /* Tạo khoảng cách giữa các dòng hợp lý */
+}
+
+/* Selector con cho hình ảnh trong nav */
+nav img {
+    width: 10%; /* Đặt chiều rộng hình ảnh trong nav */
+}
+
+/* Quy tắc cho lớp grid */
+.grid {
+    display: grid; /* Đặt display thành grid */
+    grid-template-columns: repeat(2, 40%); /* Đặt thành 2 cột với chiều rộng khoảng 40% */
+}
+
+/* Selector con cho hình ảnh trong lớp grid */
+.grid img {
+    width: 100%; /* Đặt chiều rộng hình ảnh trong grid thành 100% */
+}
+
+/* Quy tắc cho lớp flex */
+.flex {
+    display: flex; /* Đặt display thành flex */
+    flex-wrap: wrap; /* Cho phép cuộn lại */
+    justify-content: center; /* Căn giữa các phần tử */
+}
+
+/* Cài đặt cho thẻ a (hyperlink) để không có đường gạch dưới */
+a {
+    text-decoration: none; /* Xóa bỏ đường gạch dưới cho hyperlink */
 }
