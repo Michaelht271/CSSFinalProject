@@ -1,45 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
+/* Tổng quát cho body */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 115%;
+    background-color: #d67f1c;
+    margin: 0;
+    padding: 0;
+}
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Springtime In Michigan</title>
-  <!-- You will need to link to the CSS file -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
+/* Định dạng cho tiêu đề h1 */
+h1 {
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(216, 15, 15);
+    text-shadow: 1px 1px hsla(227, 90%, 4%, 0.427);
+}
 
-<body>
-  <a href="#mainIndex">Skip to Main Content ➡️</a>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="neighborhood.html">Neighborhood Walks</a></li>
-        <li><a href="parks.html">Walks in the Park</a></li>
-      </ul>
-    </nav>
-    <div id="headDIV">
-      <img id="statueIMG" src="images/BaconGallupPark.jpg" width="200" alt="Brown Labradoodle sitting next to a statue.">
-      <h1>Springtime in Michigan</h1>
-    </div>
-  </header>
-  <main id="mainIndex">
-    <p>Springtime in <a href="https://www.example.com/ann-arbor">Ann Arbor</a> is a beautiful time. Even though
-      it can be chilly at times, it is nice to walk my dog Bacon. This site includes some pictures I have taken on
-      these walks.</p>
+/* Định dạng cho header */
+header {
+    background-color: #8ad6a1;
+    border-radius: 10px;
+    padding: 20px;
+}
 
-    <p>Sometimes we walk around the neighborhood, other times we make it to the woods. Ann Arbor also has some
-      beautiful lakes and rivers including the <a
-        href="https://www.example.com/huron-river">Huron River Watertrail</a> and
-      the <a href="https://www.example.com/argo-park">Argo Park Cascades</a>.</p>
-  </main>
-  <footer>
-    <p>This page was originally created by Colleen van Lent for the <a
-        href="https://www.example.com/web-design-specialization">Web Design for Everybody</a> Specialization. Students
-      are invited to make changes.</p>
-  </footer>
+/* Định dạng cho nav */
+nav {
+    background-color: #7da58f;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 20px;
+}
 
-</body>
+/* Định dạng cho danh sách menu */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
-</html>
+/* Định dạng cho các phần tử li trong nav */
+nav li {
+    margin: 0 15px;
+    font-size: 1.5em;
+}
+
+/* Định dạng cho hình ảnh statueIMG */
+#statueIMG {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* Định dạng cho các liên kết */
+a {
+    text-decoration: none;
+    color: rgb(128, 36, 125);
+    font-weight: bold;
+}
+
+a:visited {
+    color: #f7f306;
+}
+
+a:link {
+    color: #e00f0f;
+}
+
+/* Định dạng cho main */
+main {
+    background-color: #F6FFF8;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Định dạng cho các đoạn văn trong main */
+main p {
+    width: 80%;
+    max-width: 800px;
+    line-height: 1.5em;
+    margin: 10px 0;
+}
+
+/* Định dạng cho footer */
+footer {
+    background-color: #52b788;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+/* Định dạng cho các đoạn văn trong footer */
+footer p {
+    margin: 0;
+}
