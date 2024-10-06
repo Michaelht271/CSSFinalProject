@@ -2,7 +2,7 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 115%;
-    background-color: #EAF4F4;
+    background-color: #d67f1c;
     margin: 0;
     padding: 0;
 }
@@ -11,20 +11,20 @@ body {
 h1 {
     font-size: 2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-    text-shadow: 1px 1px #1c25416a;
+    color: rgb(216, 15, 15);
+    text-shadow: 1px 1px hsla(227, 90%, 4%, 0.427);
 }
 
 /* Định dạng cho header */
 header {
-    background-color: #CCE3DE;
+    background-color: #8ad6a1;
     border-radius: 10px;
     padding: 20px;
 }
 
 /* Định dạng cho nav */
 nav {
-    background-color: #A4C3B2;
+    background-color: #7da58f;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -62,11 +62,11 @@ a {
 }
 
 a:visited {
-    color: #1c2541;
+    color: #f7f306;
 }
 
 a:link {
-    color: #0b132b;
+    color: #e00f0f;
 }
 
 /* Định dạng cho main */
