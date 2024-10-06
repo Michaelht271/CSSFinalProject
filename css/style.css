@@ -1,16 +1,13 @@
-/* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Tổng quát cho body */
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 115%;
     background-color: #EAF4F4;
+    margin: 0;
+    padding: 0;
 }
 
+/* Định dạng cho tiêu đề h1 */
 h1 {
     font-size: 2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -18,75 +15,50 @@ h1 {
     text-shadow: 1px 1px #1c25416a;
 }
 
+/* Định dạng cho header */
 header {
     background-color: #CCE3DE;
     border-radius: 10px;
-    padding: 20px 0;
+    padding: 20px;
 }
 
+/* Định dạng cho nav */
 nav {
-    text-align: center;
     background-color: #A4C3B2;
+    display: flex;
+    justify-content: center;
     padding: 10px;
     border-radius: 20px;
 }
 
+/* Định dạng cho danh sách menu */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Định dạng cho các phần tử li trong nav */
+nav li {
+    margin: 0 15px;
+    font-size: 1.5em;
+}
+
+/* Định dạng cho hình ảnh statueIMG */
 #statueIMG {
     border: none;
     border-radius: 20px;
     padding: 10px;
 }
 
+/* Định dạng cho các liên kết */
 a {
     text-decoration: none;
     color: rgb(128, 36, 125);
     font-weight: bold;
-}
-
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    row-gap: 1.5vh;
-    padding: 0; /* Sửa padding */
-}
-
-nav li {
-    list-style-type: none;
-    font-size: 1.5em;
-}
-
-#headDIV {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    overflow: auto;
-}
-
-footer {
-    background-color: #52b788;
-    text-align: center; /* Căn giữa footer */
-    padding: 10px 0; /* Thêm padding cho footer */
-}
-
-main {
-    background-color: #F6FFF8;
-    font-size: 1.5em;
-    display: flex;
-    flex-direction: column; /* Chuyển sang dạng cột */
-    align-items: center; /* Căn giữa nội dung trong main */
-    padding: 20px; /* Thêm padding cho main */
-}
-
-main p {
-    line-height: 1.5em;
-    max-width: 800px; /* Giới hạn chiều rộng của văn bản */
-}
-
-p {
-    margin: 10px 0; /* Thêm khoảng cách giữa các đoạn văn */
 }
 
 a:visited {
@@ -97,44 +69,34 @@ a:link {
     color: #0b132b;
 }
 
-#parksDIV {
+/* Định dạng cho main */
+main {
+    background-color: #F6FFF8;
+    font-size: 1.5em;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 5px;
-    padding: 10px; /* Thêm padding cho parksDIV */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
-#parksDIV > img {
-    border-radius: 10px;
-    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của khối */
+/* Định dạng cho các đoạn văn trong main */
+main p {
+    width: 80%;
+    max-width: 800px;
+    line-height: 1.5em;
+    margin: 10px 0;
 }
 
-#neighDiv {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Tự động điều chỉnh số cột */
-    padding: 5%;
-    gap: 15px;
+/* Định dạng cho footer */
+footer {
+    background-color: #52b788;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
 }
 
-#neighDiv > img {
-    justify-self: stretch;
-    object-fit: cover;
-    width: 100%;
-    max-height: 100%;
-    border-radius: 10px; /* Bo góc cho hình ảnh */
-}
-
-#mainIndex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.2vw;
-    text-align: justify;
-    overflow: auto;
-}
-
-#mainIndex p {
-    flex: 1 1 40%; /* Sử dụng flex để điều chỉnh độ rộng */
-    min-width: 300px; /* Giới hạn chiều rộng tối thiểu */
+/* Định dạng cho các đoạn văn trong footer */
+footer p {
+    margin: 0;
 }
